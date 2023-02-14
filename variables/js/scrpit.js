@@ -51,3 +51,13 @@ const num2= prompt ("Ingrese el segund numero", 0)
 console.log("la suma es:", parseInt (num1) + parseInt (num2))
 console.log("la resta es:", num1 - num2)
 
+//confirm
+const acceptTerms = confirm ("acepatas los terminos y condiciones")
+
+console.log(acceptTerms)
+
+
+
+
+
+
