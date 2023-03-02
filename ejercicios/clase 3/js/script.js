@@ -22,6 +22,13 @@ console.log(string.replace ("WOS", "QUEEN"). replace("QUEREME", "Bohemian Rhapso
  console.log(string = string.replace("WOS", "QUEEN"))
  console.log(string.replace ("QUEREME", "bohemian Rahpsody"))
 //Crear una funcion que tome por parametro un numero de DNI y retorne el mismo valor pero como un string
+const dniToString=()=>{
+    let dni= prompt("ingrese su dni")
+    return dni.toString()
+}
+const dniString=(dni)=>{
+    return dni.toString()
+}
 let dni= 33368841
 console.log (dni.toString())
 
