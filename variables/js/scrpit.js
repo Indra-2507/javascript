@@ -1,4 +1,4 @@
-let firstname= "Indra" //string- cadena de texto
+/*let firstname= "Indra" //string- cadena de texto
 let lastname= "Lima"
 let birthDateYear=1988 //number- interger
 let PI=3.141518 //number -float
@@ -25,7 +25,7 @@ console.log(firstname)
 console.log("Hola, mi nombre es " + firstname + " " + lastname + " y naci en el año" + " " + birthDateYear)
 
 /*operadores aritmeticos*/
- let number1 = "10"
+ /*let number1 = "10"
  let number2= 5
 
  console.log("suma:", number1 + number2)//como el + concatena, piensa que estamos concatenando, por eso es muy importante ver el tipo de dtos que estamos poniendo.... los numeros van en number, no en string
@@ -44,20 +44,24 @@ const birthDate= prompt ("Ingrese su nacimiento", "dd-mm-aaaa")
 console.log(Usted ingreso su edad: ${age})*/
 
 
-
+/*
 const num1= prompt ("Ingrese el primer numero", 0)
 const num2= prompt ("Ingrese el segund numero", 0)
 /*parseint es una funcion nativa de javascriot que nos permite trasnformar de un string a un numero entero*/
-console.log("la suma es:", parseInt (num1) + parseInt (num2))
+/*console.log("la suma es:", parseInt (num1) + parseInt (num2))
 console.log("la resta es:", num1 - num2)
 
 //confirm
 const acceptTerms = confirm ("acepatas los terminos y condiciones")
 
 console.log(acceptTerms)
+*/
 
+let nombre=prompt ("¿cuál es tu nombre")
+let apellid=prompt("¿cuál es tu apellido?")
+const respuesta=(nombre, apellido)=>{
+  return "hola ${nombre} ${apellido}, bienvenida"
+}
 
-
-
-
+console.log (respuesta)
 
