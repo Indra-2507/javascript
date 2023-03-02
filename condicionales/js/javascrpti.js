@@ -159,7 +159,7 @@ if (nombre){
 }*/
 /*consigna 1:
 crear un programa que clacule la suma de 2 numeros, valide el resultado y retorne, Verdadero si el resultado es positivo y retorne FALSO si el resultado en negativo*/
-
+/*
 const suma=(a,b)=>{
     const resultado=(a+b)
     if(resultado >0 ){
@@ -169,7 +169,7 @@ const suma=(a,b)=>{
     }else {
         return false}}
 
-/*crear un programa que reciba un numero e identifique si es par o impar*/
+crear un programa que reciba un numero e identifique si es par o impar
 const parImpar= (a)=>{
     const modulo= (a %2)
     if (modulo===0){
@@ -180,7 +180,7 @@ const parImpar= (a)=>{
 }
 /*crear un programa que reciba un nobre y si es Pedro QUE MUESTRE POR consola un msj de salude , y si no es pedro que diga, "no sos pedro*/
 
-const saludarsiEsPedro= (nombre)=>{
+/*const saludarsiEsPedro= (nombre)=>{
 let mensaje=""
 if (nombre.toLowerCase()==="pedro"){
     mensaje= "Hola Pedro, cómo estas?"
@@ -189,7 +189,7 @@ if (nombre.toLowerCase()==="pedro"){
 }
 //recursividad==> creas una funcion y adentro de la misma , la volves a ejecutar
 /*crear un progtama que reciba una cntraseña y valide si su longitud es mayor a o igual a 8 caracteres, si es menor, solicitar que ingrese de nuevo la contraseña*/
-const password= prompt ("Ingrese su contraseña")
+/*const password= prompt ("Ingrese su contraseña")
 
 const validarContraseña=(password)=>{
     if (password.length >=8){
@@ -199,8 +199,106 @@ const validarContraseña=(password)=>{
         validarContraseña(password)
     }
 }
-validarContraseña(password)
+validarContraseña(password)*/
 
+//segunda parte de condicionales
+//con variable que representa true o false
+/*+const condicion= true
+//si necesitamos validar true
+ if (condicion)=>{
+    console.log = ("me jecute")
+ }
+//si necesitas validar false
+if(!condicion)=>{
+    console.log=("me ejecute")
+}
+*/
+//condicionales y operadores logicos
+//evualur dos condiciones
+///el operador && nos permite evaluar mas condiciones y para que se cumpla la condicion, todos los terminos deben ser verdaderos
+
+/*const sabeManejar =true
+const edad=18
+
+if (edad>= 18 && sabeManejar){
+    console.log ("podes sacar el registro")
+}else {
+    console.log ("todavia te falta")
+}
+
+// con el or ||
+// basta con que una sola condicion sea true para que se cumple, en el unico caso en el que no se cumpla, es que todos sean false
+const condicion = true
+const condicion2= false
+ if (condicion|| condicion2){
+    console.log ("me ejecute")
+ }
+//condiciones anidadas*/
+
+// Condicionales anidados
+
+const condicion = true
+const condicion2 = false
+
+if (condicion) {
+    if (condicion2){
+        console.log("1")
+    } else {
+        console.log("2")
+    }
+} else {
+    console.log("3")
+}
+//se puede hacer de esta manera tmb... hay que buscar lo mas sencillo y prolijo
+if (condicion&&condicion2){
+    console.log ("1")
+}else{
+    console.log("2")
+}
+
+//operador ternario- es lo mismo que un if simple pero escrito bonito
+// condicion ? se ejecuta si se cumple : o se ejucuta esto
+// solo funciona para condicionales simples(no y u or)
+//estoy obligada a poner el else (:)
+const edad =16
+edad>=16 ? console.log("podes votar") : console.log ("todavia no podes votar")
+//es PositivoONegativo
+const PositivoONegativo=(a,b)=>{
+    const resultado = a + b
+    return resultado > 0 ? "Es positivo": "Es negativo"}
+//el return se puede poner una sola vez
+console.log (PositivoONegativo(-5,-15))
+
+//switch
+//evaluamos una condicionvy segun cada caso podemos ejecutar un bloque distinto
+
+const diaDeLaSemana= parseInt (prompt ("Ingrese un numerodel 0 al 6"))
+switch (diaDeLaSemana){
+    case 0:
+        console.log ("Domingo")
+    break
+    case 1:
+        console.log ("lunes")
+    break
+    case 2:
+        console.log ("martes")
+    break
+    case 3:
+    console.log ("miercoles")
+break
+case 4:
+        console.log ("jueves")
+    break
+    case 5:
+        console.log ("viernes")
+    break
+    case 1:
+    console.log ("sabado")
+break
+default:
+    console.log ("no existe un dia de la semana para ese numero")
+    break
+}
 
 
 
